@@ -827,3 +827,46 @@ transform:translateY(0);
     opacity:.9;
     margin-bottom:30px;
 }
+/* ===== TIMELINE ===== */
+
+.timeline{
+    text-align:left;
+    max-width:420px;
+    margin:auto;
+}
+
+.event{
+    display:flex;
+    align-items:flex-start;
+    gap:18px;
+}
+
+.dot{
+    width:16px;
+    height:16px;
+    border-radius:50%;
+    background:#d6b36a;
+    box-shadow:0 0 12px rgba(214,179,106,.5);
+    margin-top:8px;
+    flex-shrink:0;
+}
+
+.line{
+    width:2px;
+    height:55px;
+    background:linear-gradient(#d6b36a,rgba(214,179,106,.15));
+    margin:0 7px 0 7px;
+}
+
+.timeline h3{
+    font-size:28px;
+    color:#f5e7b5;
+    margin-bottom:6px;
+    font-family:'Cormorant Garamond',serif;
+}
+
+.timeline p{
+    font-size:18px;
+    color:white;
+    opacity:.9;
+}
