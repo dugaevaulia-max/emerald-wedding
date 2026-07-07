@@ -634,5 +634,48 @@ transform:scaleX(1.15);
 opacity:1;
 
 }
+/* ===== ПЕРВЫЙ ЭКРАН ===== */
 
+.subtitle{
+    color:#d6b36a;
+    text-transform:uppercase;
+    letter-spacing:5px;
+    font-size:15px;
+    margin-bottom:30px;
+    opacity:.9;
+}
+
+.names{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:12px;
+}
+
+.name{
+    font-size:72px;
+    color:#f5e7b5;
+}
+
+.rings{
+    font-family:'Cormorant Garamond',serif;
+    font-size:62px;
+    color:#d6b36a;
+    line-height:1;
+    text-shadow:0 0 20px rgba(214,179,106,.45);
+}
+
+.gold-line{
+    width:180px;
+    height:2px;
+    margin:28px auto;
+    background:linear-gradient(
+        90deg,
+        transparent,
+        #d6b36a,
+        #fff2c6,
+        #d6b36a,
+        transparent
+    );
+}
 }
