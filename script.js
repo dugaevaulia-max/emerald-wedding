@@ -1,6 +1,6 @@
 // Таймер
 
-const weddingDate = new Date("2026-08-28T16:00:00");
+const weddingDate = new Date("2026-08-28T14:30:00");
 
 function updateTimer() {
   const timer = document.getElementById("timer");
