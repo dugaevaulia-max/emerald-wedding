@@ -1,1 +1,161 @@
+/* ===========================
+   EMERALD WEDDING
+   Part 1
+=========================== */
 
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap');
+
+:root{
+--emerald:#0f3b2e;
+--emerald2:#1b5b46;
+--gold:#d6b36a;
+--gold2:#f5e7b5;
+--glass:rgba(255,255,255,.08);
+--white:#ffffff;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+font-family:'Montserrat',sans-serif;
+
+background:
+radial-gradient(circle at top,#1d5a44 0%,#0d231b 60%,#08130f 100%);
+
+color:white;
+
+overflow-x:hidden;
+
+}
+
+/* золотое свечение */
+
+body::before{
+
+content:"";
+
+position:fixed;
+
+inset:0;
+
+pointer-events:none;
+
+background:
+radial-gradient(circle at 20% 10%,rgba(214,179,106,.18),transparent 25%),
+radial-gradient(circle at 80% 90%,rgba(214,179,106,.12),transparent 30%);
+
+animation:glow 8s ease-in-out infinite alternate;
+
+}
+
+@keyframes glow{
+
+from{
+opacity:.4;
+transform:scale(1);
+}
+
+to{
+opacity:.9;
+transform:scale(1.15);
+}
+
+}
+
+section{
+
+min-height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+flex-direction:column;
+
+padding:80px 25px;
+
+text-align:center;
+
+position:relative;
+
+}
+
+h1{
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:72px;
+
+font-weight:600;
+
+line-height:1.1;
+
+color:white;
+
+}
+
+h2{
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:52px;
+
+color:var(--gold2);
+
+margin-bottom:25px;
+
+}
+
+p{
+
+font-size:19px;
+
+line-height:1.9;
+
+max-width:720px;
+
+}
+
+.date{
+
+margin-top:30px;
+
+font-size:28px;
+
+letter-spacing:8px;
+
+color:var(--gold);
+
+}
+
+.card{
+
+margin-top:35px;
+
+background:var(--glass);
+
+backdrop-filter:blur(20px);
+
+border:1px solid rgba(255,255,255,.15);
+
+border-radius:28px;
+
+padding:40px;
+
+width:min(700px,100%);
+
+box-shadow:
+0 0 40px rgba(0,0,0,.25);
+
+}
