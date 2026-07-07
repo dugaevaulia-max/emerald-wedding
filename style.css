@@ -477,3 +477,11 @@ button:hover{
     margin: 40px auto;
     letter-spacing: 12px;
 }
+.date {
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin: 40px auto;
+    font-size: 48px;
+    letter-spacing: 12px;
+}
