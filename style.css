@@ -602,3 +602,37 @@ filter:blur(0);
 }
 
 }
+.gold-line{
+
+width:180px;
+
+height:2px;
+
+margin:28px auto;
+
+background:
+linear-gradient(
+90deg,
+transparent,
+#d6b36a,
+#fff0bf,
+#d6b36a,
+transparent);
+
+box-shadow:0 0 15px rgba(214,179,106,.45);
+
+animation:lineGlow 3s infinite;
+
+}
+
+@keyframes lineGlow{
+
+50%{
+
+transform:scaleX(1.15);
+
+opacity:1;
+
+}
+
+}
