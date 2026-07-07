@@ -1,110 +1,13 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Олександр & Юлія</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
-
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-body{
-background:#173728;
-color:white;
-font-family:Montserrat,sans-serif;
-overflow-x:hidden;
-}
-
-section{
-min-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-padding:50px 25px;
-text-align:center;
-}
-
-h1{
-font-family:"Cormorant Garamond",serif;
-font-size:56px;
-font-weight:600;
-}
-
-h2{
-font-family:"Cormorant Garamond",serif;
-font-size:40px;
-margin-bottom:20px;
-}
-
-p{
-font-size:18px;
-line-height:1.8;
-max-width:700px;
-}
-
-.date{
-font-size:34px;
-letter-spacing:4px;
-margin-top:25px;
-}
-
-.card{
-background:rgba(255,255,255,.08);
-backdrop-filter:blur(10px);
-padding:30px;
-border-radius:25px;
-width:100%;
-max-width:700px;
-margin-top:25px;
-}
-
-.button{
-display:inline-block;
-margin-top:30px;
-padding:16px 35px;
-background:white;
-color:#173728;
-text-decoration:none;
-border-radius:50px;
-font-weight:bold;
-transition:.3s;
-}
-
-.button:hover{
-transform:scale(1.05);
-}
-
-.colors{
-display:flex;
-justify-content:center;
-gap:15px;
-margin-top:35px;
-flex-wrap:wrap;
-}
-
-.color{
-width:65px;
-height:65px;
-border-radius:50%;
-border:3px solid white;
-}
-
-footer{
-padding:50px;
-text-align:center;
-font-size:15px;
-opacity:.7;
-}
-
-</style>
+<link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -112,45 +15,53 @@ opacity:.7;
 
 <section>
 
-<h1>Олександр<br>&<br>Юлія</h1>
+<h1 class="fade">
+Олександр <br>
+&<br>
+Юлія
+</h1>
 
-<div class="date">
+<div class="date fade">
 28 • 08 • 2026
+</div>
+
+<div class="card fade">
+
+<h2>Дорогі гості</h2>
+
+<p>
+
+Запрошуємо Вас розділити з нами
+найщасливіший день нашого життя —
+день нашого весілля.
+
+</p>
+
+<a class="button" href="#program">
+
+Детальніше
+
+</a>
+
 </div>
 
 </section>
 
-<section>
+<section id="program">
 
-<h2>Запрошення</h2>
-
-<p>
-
-Дорогі гості!
-
-Ми будемо дуже щасливі розділити з вами один із найважливіших днів нашого життя.
-
-Запрошуємо вас на наше весілля ❤️
-
-</p>
-
-</section>
-
-<section>
-
-<h2>Розклад</h2>
+<h2>Програма дня</h2>
 
 <div class="card">
 
 <p>
 
-14:30<br>
-Урочиста церемонія
+15:30 — Збір гостей<br><br>
 
-<br><br>
+16:00 — Церемонія<br><br>
 
-15:30<br>
-Святковий банкет
+17:00 — Святковий банкет<br><br>
+
+23:00 — Завершення вечора
 
 </p>
 
@@ -158,88 +69,8 @@ opacity:.7;
 
 </section>
 
-<section>
-
-<h2>Місце проведення</h2>
-
-<p>
-
-Ресторан<br>
-«Садиба на Кодимі»<br>
-
-с. Арчепитівка
-
-</p>
-
-<a class="button" href="https://maps.app.goo.gl/WKEbhFbSpyLBwuWB9?g_st=ic">
-
-Побудувати маршрут
-
-</a>
-
-</section>
-
-<section>
-
-<h2>Dress Code</h2>
-
-<p>
-Будемо вдячні, якщо підтримаєте кольорову гаму нашого свята.
-</p>
-
-<div class="colors">
-
-<div class="color" style="background:#000000;"></div>
-
-<div class="color" style="background:#6B513E;"></div>
-
-<div class="color" style="background:#9A7C68;"></div>
-
-<div class="color" style="background:#D8C8B3;"></div>
-
-<div class="color" style="background:#FFFFFF;"></div>
-
-<div class="color" style="background:#55663B;"></div>
-
-</div>
-
-</section>
-
-<section>
-
-<h2>Підтвердження</h2>
-
-<p>
-
-Будемо з нетерпінням чекати підтвердження присутності
-
-до
-
-<b>18.08.2026</b>
-
-</p>
-
-<a class="button" href="https://t.me/JMJuliette">
-
-Написати в Telegram
-
-</a>
-
-<a class="button" href="tel:+380662329583">
-
-Зателефонувати
-
-</a>
-
-</section>
-
-<footer>
-
-З любов'ю ❤️
-
-Олександр та Юлія
-
-</footer>
+<script src="script.js"></script>
 
 </body>
+
 </html>
