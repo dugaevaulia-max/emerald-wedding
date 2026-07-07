@@ -478,10 +478,12 @@ button:hover{
     letter-spacing: 12px;
 }
 .date {
-    width: 100%;
-    text-align: center;
-    display: block;
-    margin: 40px auto;
-    font-size: 48px;
-    letter-spacing: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    color: #d6b36a;
+    letter-spacing: 6px;
+    margin: 40px 0;
+    white-space: nowrap;
 }
