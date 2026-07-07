@@ -679,3 +679,55 @@ opacity:1;
     );
 }
 }
+/* ===== ЭВКАЛИПТ ===== */
+
+.eucalyptus{
+    position:fixed;
+    width:220px;
+    height:220px;
+    pointer-events:none;
+    opacity:.08;
+    z-index:1;
+}
+
+.eucalyptus-left{
+    top:0;
+    left:0;
+    background:
+    radial-gradient(circle at 35% 20%,#9cb49a 7px,transparent 8px),
+    radial-gradient(circle at 55% 45%,#88a486 8px,transparent 9px),
+    radial-gradient(circle at 25% 70%,#9cb49a 7px,transparent 8px),
+    radial-gradient(circle at 70% 75%,#7b967a 7px,transparent 8px);
+
+    animation:leafFloatLeft 8s ease-in-out infinite;
+}
+
+.eucalyptus-right{
+    bottom:0;
+    right:0;
+    background:
+    radial-gradient(circle at 70% 20%,#9cb49a 7px,transparent 8px),
+    radial-gradient(circle at 45% 50%,#88a486 8px,transparent 9px),
+    radial-gradient(circle at 75% 75%,#9cb49a 7px,transparent 8px),
+    radial-gradient(circle at 25% 70%,#7b967a 7px,transparent 8px);
+
+    animation:leafFloatRight 9s ease-in-out infinite;
+}
+
+@keyframes leafFloatLeft{
+    0%,100%{
+        transform:rotate(-2deg) translateY(0);
+    }
+    50%{
+        transform:rotate(2deg) translateY(8px);
+    }
+}
+
+@keyframes leafFloatRight{
+    0%,100%{
+        transform:rotate(2deg) translateY(0);
+    }
+    50%{
+        transform:rotate(-2deg) translateY(-8px);
+    }
+}
