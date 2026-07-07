@@ -731,3 +731,85 @@ opacity:1;
         transform:rotate(-2deg) translateY(-8px);
     }
 }
+/* ========= ПЕРВЫЙ ЭКРАН ========= */
+
+.intro{
+    opacity:0;
+    animation:introShow 2s forwards,
+              introHide 1s forwards 3s;
+}
+
+@keyframes introShow{
+    from{
+        opacity:0;
+        letter-spacing:12px;
+    }
+    to{
+        opacity:1;
+        letter-spacing:5px;
+    }
+}
+
+@keyframes introHide{
+    to{
+        opacity:0;
+    }
+}
+
+.names,
+.promise,
+.yes,
+.gold-line,
+.date{
+    opacity:0;
+}
+
+.names{
+    animation:fadeIn 1.5s forwards;
+    animation-delay:4s;
+}
+
+.promise{
+    margin-top:18px;
+    color:#d8c48b;
+    font-style:italic;
+    font-size:20px;
+    opacity:0;
+    animation:fadeIn 1.5s forwards;
+    animation-delay:5.3s;
+}
+
+.yes{
+    font-family:'Cormorant Garamond',serif;
+    font-size:52px;
+    color:#f3d37a;
+    margin-top:8px;
+    text-shadow:0 0 18px rgba(214,179,106,.45);
+
+    animation:fadeIn 1.5s forwards;
+    animation-delay:6.2s;
+}
+
+.gold-line{
+    animation:fadeIn 1.5s forwards;
+    animation-delay:7s;
+}
+
+.date{
+    animation:fadeIn 1.5s forwards;
+    animation-delay:7.5s;
+}
+
+@keyframes fadeIn{
+
+from{
+opacity:0;
+transform:translateY(25px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
