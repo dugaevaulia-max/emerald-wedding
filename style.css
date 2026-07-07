@@ -814,3 +814,16 @@ transform:translateY(0);
 
 }
 
+#location h3{
+    font-family:'Cormorant Garamond',serif;
+    font-size:34px;
+    color:#f5e7b5;
+    margin-bottom:10px;
+    font-weight:600;
+}
+
+#location p{
+    font-size:20px;
+    opacity:.9;
+    margin-bottom:30px;
+}
