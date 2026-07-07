@@ -158,4 +158,92 @@ width:min(700px,100%);
 box-shadow:
 0 0 40px rgba(0,0,0,.25);
 
+} 
+/* ===== КНОПКИ ===== */
+
+.button{
+display:inline-block;
+margin-top:30px;
+padding:16px 42px;
+border-radius:50px;
+text-decoration:none;
+background:linear-gradient(135deg,#d6b36a,#f5e7b5);
+color:#123126;
+font-weight:600;
+font-size:17px;
+transition:.35s;
+box-shadow:0 10px 25px rgba(0,0,0,.25);
+}
+
+.button:hover{
+transform:translateY(-4px) scale(1.03);
+box-shadow:0 20px 40px rgba(214,179,106,.4);
+}
+
+/* ===== ПЛАВНОЕ ПОЯВЛЕНИЕ ===== */
+
+.fade{
+opacity:0;
+transform:translateY(40px);
+animation:fadeUp 1.2s forwards;
+}
+
+@keyframes fadeUp{
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+/* ===== ДРЕСС-КОД ===== */
+
+.colors{
+display:flex;
+justify-content:center;
+gap:18px;
+flex-wrap:wrap;
+margin-top:35px;
+}
+
+.color{
+
+width:60px;
+
+height:60px;
+
+border-radius:50%;
+
+border:2px solid rgba(255,255,255,.3);
+
+box-shadow:0 8px 18px rgba(0,0,0,.25);
+
+transition:.3s;
+
+}
+
+.color:hover{
+
+transform:scale(1.15);
+
+}
+
+.c1{background:#0F5B43;}
+.c2{background:#B79A74;}
+.c3{background:#7A8B6A;}
+.c4{background:#D7C6AF;}
+.c5{background:#000000;}
+.c6{background:#FFFFFF;border:2px solid #ddd;}
+
+/* ===== БЛОКИ ===== */
+
+.card:hover{
+
+transform:translateY(-8px);
+
+transition:.4s;
+
+box-shadow:0 25px 50px rgba(0,0,0,.35);
+
 }
