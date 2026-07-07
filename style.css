@@ -302,3 +302,53 @@ button:hover{
 html{
     scroll-behavior:smooth;
 }
+/* ===== ЗОЛОТЫЕ ЧАСТИЦЫ ===== */
+
+.particles{
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    overflow:hidden;
+    z-index:0;
+}
+
+.particles::before,
+.particles::after{
+    content:"";
+    position:absolute;
+    width:220%;
+    height:220%;
+    left:-60%;
+    top:-60%;
+
+    background-image:
+      radial-gradient(circle,#d4af37 1.2px,transparent 1.2px),
+      radial-gradient(circle,#fff3c4 .8px,transparent .8px);
+
+    background-size:80px 80px,120px 120px;
+
+    opacity:.22;
+
+    animation:floatStars 60s linear infinite;
+}
+
+.particles::after{
+    animation-direction:reverse;
+    opacity:.12;
+}
+
+@keyframes floatStars{
+    from{
+        transform:translateY(0) rotate(0deg);
+    }
+    to{
+        transform:translateY(-220px) rotate(360deg);
+    }
+}
+
+/* Контент поверх частиц */
+
+body>*{
+    position:relative;
+    z-index:2;
+}
