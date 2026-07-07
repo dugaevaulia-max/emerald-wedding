@@ -813,3 +813,57 @@ transform:translateY(0);
 }
 
 }
+/* ===== ЭВКАЛИПТ ===== */
+
+.eucalyptus{
+    position:fixed;
+    width:260px;
+    opacity:.18;
+    z-index:0;
+    pointer-events:none;
+    transition:1s;
+    animation:leafMove 8s ease-in-out infinite;
+}
+
+.eucalyptus.left{
+    top:-20px;
+    left:-40px;
+}
+
+.eucalyptus.right{
+    bottom:-20px;
+    right:-40px;
+    animation:rightLeaf 8s ease-in-out infinite;
+}
+
+@keyframes rightLeaf{
+
+0%{
+transform:rotate(180deg) translateY(0);
+}
+
+50%{
+transform:rotate(182deg) translateY(-8px);
+}
+
+100%{
+transform:rotate(180deg) translateY(0);
+}
+
+}
+
+@keyframes leafMove{
+
+0%{
+transform:translateY(0) rotate(0deg);
+}
+
+50%{
+transform:translateY(8px) rotate(2deg);
+}
+
+100%{
+transform:translateY(0) rotate(0deg);
+}
+
+}
