@@ -92,17 +92,16 @@ position:relative;
 }
 
 h1{
+    font-family:'Cormorant Garamond',serif;
+    font-size:72px;
+    font-weight:700;
+    line-height:1.1;
+    color:#f4e3b2;
 
-font-family:'Cormorant Garamond',serif;
-
-font-size:72px;
-
-font-weight:600;
-
-line-height:1.1;
-
-color:white;
-
+    text-shadow:
+        0 0 8px rgba(255,255,255,.15),
+        0 0 18px rgba(214,179,106,.35),
+        0 0 35px rgba(214,179,106,.18);
 }
 
 h2{
