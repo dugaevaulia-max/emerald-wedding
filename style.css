@@ -424,3 +424,49 @@ button:hover{
     transform:translateY(-5px) scale(1.03);
     box-shadow:0 20px 45px rgba(212,175,55,.45);
 }
+/* ===== КРАСИВЫЙ ТАЙМЕР ===== */
+
+.countdown{
+    display:flex;
+    justify-content:center;
+    gap:16px;
+    flex-wrap:wrap;
+    margin-top:35px;
+}
+
+.time-box{
+    width:82px;
+    height:82px;
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(10px);
+    border:1px solid rgba(212,175,55,.25);
+    border-radius:22px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+
+    transition:.35s;
+}
+
+.time-box:hover{
+    transform:translateY(-5px);
+    box-shadow:0 15px 35px rgba(212,175,55,.25);
+}
+
+.time-box span{
+    font-size:30px;
+    font-weight:700;
+    color:#d4af37;
+    line-height:1;
+}
+
+.time-box small{
+    margin-top:8px;
+    color:white;
+    font-size:13px;
+    letter-spacing:1px;
+}
