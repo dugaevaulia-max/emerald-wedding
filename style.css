@@ -874,116 +874,137 @@ transform:translateY(0);
     padding:90px 20px;
 }
 
+#program{
+    padding:100px 20px;
+}
+
 .schedule-card{
 
-    position:relative;
-
-    max-width:700px;
+    width:min(720px,100%);
     margin:auto;
 
-    padding:45px 35px;
+    padding:55px 45px;
 
-    border-radius:35px;
+    border-radius:34px;
 
     background:rgba(255,255,255,.06);
 
     backdrop-filter:blur(18px);
 
-    border:1px solid rgba(255,223,150,.18);
+    border:1px solid rgba(255,230,170,.18);
 
     box-shadow:
-        0 20px 60px rgba(0,0,0,.35),
-        inset 0 0 30px rgba(255,255,255,.04);
+    0 25px 70px rgba(0,0,0,.35),
+    inset 0 0 30px rgba(255,255,255,.03);
 
 }
 
-.timeline-item{
+.timeline{
+    position:relative;
+}
+
+.event{
 
     display:flex;
+    gap:28px;
 
-    align-items:center;
-
-    gap:25px;
+    align-items:flex-start;
 
     position:relative;
 
-    z-index:2;
-
 }
 
-.timeline-dot{
+.dot{
 
     width:18px;
-
     height:18px;
 
     border-radius:50%;
 
-    background:#D8B56C;
+    background:#d6b36a;
 
     box-shadow:
-    0 0 15px rgba(216,181,108,.8),
-    0 0 30px rgba(216,181,108,.5);
+    0 0 16px rgba(214,179,106,.8),
+    0 0 35px rgba(214,179,106,.45);
 
     flex-shrink:0;
 
+    animation:pulse 2.8s infinite;
+
 }
 
-.timeline-line{
+.line{
 
     width:2px;
 
-    height:75px;
+    height:78px;
 
-    background:linear-gradient(
+    margin:10px 0 10px 8px;
+
+    background:
+    linear-gradient(
     to bottom,
-    rgba(216,181,108,1),
-    rgba(216,181,108,.15)
-    );
-
-    margin-left:8px;
+    #d6b36a,
+    rgba(214,179,106,.15));
 
 }
 
-.time{
+.content{
+
+    padding-bottom:8px;
+
+}
+
+.content .time{
 
     display:block;
 
-    color:#E7C67B;
+    font-family:'Cormorant Garamond',serif;
 
-    font-size:34px;
+    color:#f5e7b5;
 
-    font-family:"Cormorant Garamond",serif;
+    font-size:38px;
 
     font-weight:700;
 
     margin-bottom:8px;
 
-    letter-spacing:1px;
-
 }
 
-.timeline-content h3{
+.content p{
+
+    font-size:24px;
 
     color:white;
 
-    font-size:26px;
-
-    font-weight:300;
+    line-height:1.4;
 
 }
 
-.timeline-item:hover{
+.schedule-card:hover{
 
-    transform:translateX(8px);
+    transform:translateY(-8px);
 
-    transition:.4s;
+    transition:.45s;
 
 }
 
-.timeline-dot{
+@keyframes pulse{
 
-    animation:pulse 2.5s infinite;
+0%{
+transform:scale(1);
+}
+
+50%{
+transform:scale(1.25);
+box-shadow:
+0 0 22px rgba(214,179,106,1),
+0 0 40px rgba(214,179,106,.7);
+}
+
+100%{
+transform:scale(1);
+}
 
 }
 
